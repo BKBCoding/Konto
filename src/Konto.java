@@ -3,6 +3,10 @@ public class Konto {
     private int kontoNr;
     private double saldo;
 
+    public Konto() {
+        this.saldo = 0;
+    }
+
     public Konto(int kontoNr) {
         this.kontoNr = kontoNr;
         this.saldo = 0;
