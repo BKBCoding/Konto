@@ -1,15 +1,12 @@
 public class Konto {
 
     private int kontoNr;
-    private double saldo;
+    private double saldo = 0;
 
-    public Konto() {
-        this.saldo = 0;
-    }
+    public Konto() {}
 
     public Konto(int kontoNr) {
         this.kontoNr = kontoNr;
-        this.saldo = 0;
     }
 
     public Konto(int kontoNr, double saldo) {
@@ -17,7 +14,7 @@ public class Konto {
         this.saldo = saldo;
     }
 
-    private void setKontoNr(int kontoNr) {
+    public void setKontoNr(int kontoNr) {
         this.kontoNr = kontoNr;
     }
 
@@ -25,7 +22,7 @@ public class Konto {
         return kontoNr;
     }
 
-    private void setSaldo(double saldo) {
+    public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 
