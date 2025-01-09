@@ -42,7 +42,7 @@ public class Konto {
     }
 
     public double auszahlen(double amount){
-        if(this.saldo >= amount){
+        if(this.saldo >= amount  && amount > 0){
             this.saldo -= amount;
         }
 
